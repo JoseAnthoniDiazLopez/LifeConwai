@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: grid;
+    place-items: center;
+    background: black;
+    position: fixed;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    width: 98vw;
+}
+
+canvas{
+    background: #ffffff;
+}
+
+#contBtn{
+   width: 80%;
+   margin: 10px;
+   padding: 10px;
+   background: #ffffff;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#contCanvas {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+
+button{
+    background: black;
+    color: white;
+    height: 80%;
+    width: 20%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 70%;
+}

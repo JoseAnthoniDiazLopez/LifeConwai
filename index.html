@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game the life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <div id="contCanvas">
+        <canvas 
+        ontouchstart="inicioToque(event)"
+        ontouchmove="moviendoToque(event,0)"
+        ontouchend="finToque(event,0)"
+        onmousedown="inicioToque(event)"
+        onmousemove="moviendoToque(event,1)"
+        onmouseup="finToque(event,1)"
+        ></canvas>
+      </div>
+      
+        <div id="contBtn">
+          <button onclick="desplazarte()">move</button>
+          
+            <button id="playBtn" onclick="play()">
+             Play
+            </button>
+            <button id="clearAll" onclick="limpiarMapa()">clear All</button>
+            <button id="clearBtn" onclick="borrar()" >
+            Clear
+            </button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
